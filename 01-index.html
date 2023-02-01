@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulacion del DOM basica - Curso de Javascript</title> <!---->
+</head>
+<body>
+    <h1>Manipulacion del DOM</h1>
+
+    <input id='calculo1' placeholder="Escribe aqui un texto">
+    <input onchange="console.log('cambio el input')" id='calculo2' placeholder="Escribe aqui otro texto"><!--onchange de igual forma permite escuchar cuando el valor que esta dentro del placeholder ha cambiado y en este caso hacemos que mande un console.log-->
+
+    <button id="btnCalcular" onclick="boton()">Calcular</button> <!-- Con el onclick podemos ejecutar una accion cuando el usuaurio le de click al boton 'calcular' y dentro del onclick pasamos como valor la funcion que creamos en JS para que cuando le de click de ejecute esa funcion-->
+    <p id="result"></p>
+
+    <script src="./01-script2.js"></script> 
+</body>
+</html>
